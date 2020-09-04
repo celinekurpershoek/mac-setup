@@ -1,0 +1,136 @@
+# Tap homebrew
+tap 'homebrew/cask'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
+tap 'homebrew/bundle'
+tap 'homebrew/services'
+
+###########################################################################
+#
+# SOFTWARE THAT IS TYPICALLY FINE FOR EVERYONE
+#
+###########################################################################
+
+##
+# Browsers
+#
+# We prefer Firefox because it's open source.
+##
+
+# Firefox web browser
+cask 'firefox'
+
+# Firefox developer edition, which features programming tools.
+cask 'firefox-developer-edition'
+
+# Brave web browser, which features security by default.
+cask 'brave-browser'
+
+# Google Chrome web browser
+cask 'google-chrome'
+
+##
+# Chat
+##
+
+# Discord chat
+cask 'discord'
+
+# Slack chat client
+cask 'slack'
+
+##
+# Terminals
+##
+
+# iTerm is our favorite terminal app.
+cask 'iterm2'
+
+# Auto update Brew:
+brew 'terminal-notifier'
+tap 'domt4/autoupdate'
+
+##
+# Shells
+#
+# We typically use bash, zsh, fish, and mosh.
+##
+
+# Bash is the Bourne Again SHell. Bash is an sh-compatible shell.
+brew 'bash'
+
+# Programmable completion functions for bash
+brew 'bash-completion'
+
+# Zsh is a shell designed for interactive use.
+brew 'zsh'
+
+# Bitwarden password manager, which is open-source
+cask 'bitwarden'
+
+##
+# Editors
+#
+# We typically use command line editors (vim, emacs, etc.)
+# and sometimes use GUI editors (atom, sublime, etc.)
+##
+
+# Visual studio code
+cask 'visual-studio-code'
+
+# Git is a free and open source distributed version control system.
+brew 'git'
+
+##
+# Server-Related
+##
+
+# Docker software containers to help distribute applications.
+brew 'docker'
+brew 'boot2docker'
+
+# Compose is a tool for defining and running multi-container Docker applications.
+brew 'docker-compose'
+
+# Docker Machine installs Docker Engine on virtual hosts, and manages the hosts.
+brew 'docker-machine'
+
+##
+# Brew cask enables installing typical Mac OS X applications.
+# For example, these formulas may download a `*.dmg` file,
+# then unpack it into the correct `/Applications` directory,
+# and possibly configure the app with typical settings.
+##
+
+# TDB
+cask 'alfred'
+
+# Keep your mac awake during presentations
+cask 'caffeine'
+
+# Dropbox
+cask 'dropbox'
+
+# Spotify music player
+cask 'spotify'
+
+# Postman: a complete API Development Environment.
+cask 'postman'
+
+## Markdown
+
+# MacDown simple markdown editor
+cask 'macdown'
+
+## JavaScript
+
+# Node.js is a JavaScript platform for building fast, scalable network app.
+brew 'node'
+
+# V8 JavaScript Engine.
+brew 'v8'
+
+## Fonts
+## You can add more fonts to your liking, just to let you know you can install these too with a brewfile!
+cask 'font-roboto'

@@ -1,4 +1,6 @@
 # Tap homebrew
+tap 'homebrew/core'
+tap 'buo/cask-upgrade'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
@@ -69,6 +71,9 @@ brew 'zsh'
 # Bitwarden password manager, which is open-source
 cask 'bitwarden'
 
+# Powerlevel10k zsh theme
+brew 'romkatv/powerlevel10k/powerlevel10k'
+
 ##
 # Editors
 #
@@ -82,26 +87,28 @@ cask 'visual-studio-code'
 # Git is a free and open source distributed version control system.
 brew 'git'
 
+brew 'nvm'
+
 ##
 # Server-Related
 ##
 
 # Docker software containers to help distribute applications.
-brew 'docker'
-brew 'boot2docker'
+# brew 'docker'
+# brew 'boot2docker'
 
 # Compose is a tool for defining and running multi-container Docker applications.
-brew 'docker-compose'
+# brew 'docker-compose
 
 # Docker Machine installs Docker Engine on virtual hosts, and manages the hosts.
-brew 'docker-machine'
+# brew 'docker-machine'
 
 ##
 # Brew cask enables installing typical Mac OS X applications.
 # For example, these formulas may download a `*.dmg` file,
 # then unpack it into the correct `/Applications` directory,
 # and possibly configure the app with typical settings.
-##
+##     
 
 # TDB
 cask 'alfred'

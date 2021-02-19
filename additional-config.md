@@ -21,4 +21,9 @@ https://github.com/julienXX/terminal-notifier
 `$ brew autoupdate --start`
 
 ## Setup ZSH theme
+https://github.com/romkatv/powerlevel10k#features
+
+`$ echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc`
+
+Then type `p10k configure` to access the builtin configuration wizard.
 ..

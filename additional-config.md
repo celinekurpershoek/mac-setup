@@ -12,6 +12,12 @@ https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-
 `$ pbcopy < ~/.ssh/id_rsa.pub`
 
 
+## Use dotfiles from this repo
+sym link files
+
+  `ln -s ~/Documents/www/mac-setup/.dotfiles/.gitconfig ~/.gitconfig`
+  `ln -s ~/Documents/www/mac-setup/.dotfiles/.zshrc ~/.zshrc`
+
 ## Setup brew autoupdate with notification
 I haven't really see this working but it would be nice to keep everything up-to-date.
 https://github.com/DomT4/homebrew-autoupdate
